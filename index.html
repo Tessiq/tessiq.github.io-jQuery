@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <title>SpaceX</title>
+</head>
+<body>
+  <img id="logo" src="Images/Spacex_logo.png" width="40%" height="10%" alt="SPACEX">
+  <nav class="navigation-bar">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Calender</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+  <br>
+  <img src="Images/space2.jpg" alt="Space" width="100%" height="50%">
+  <div id="accordion">
+        <h3>Space News</h3>
+        <div>
+          <p>
+          Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+          ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+          amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+          odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+          </p>
+        </div>
+        <h3>Space Tech</h3>
+        <div>
+          <p>
+          Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+          purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+          velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+          suscipit faucibus urna.
+          </p>
+        </div>
+        <h3>Spaceflight</h3>
+        <div>
+          <p>
+          Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+          Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+          ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+          lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+          </p>
+          <ul>
+            <li>List item one</li>
+            <li>List item two</li>
+            <li>List item three</li>
+          </ul>
+        </div>
+        <h3>Science & Astronomy</h3>
+        <div>
+          <p>
+          Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+          et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+          faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+          mauris vel est.
+          </p>
+          <p>
+          Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+          inceptos himenaeos.
+          </p>
+        </div>
+  </div>
+  <div id="progressbar"></div>
+  <div class="form">
+    <h2> Sign Up For More Information </h2>
+    <form action="/action_page.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname"><br>
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email" placeholder="example@gmail.com"><br>
+    <label for="date">Date:</label><br>
+    <input type="text" id="datepicker"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+  </div>
+  <br>
+</body>
+<script src="js/jquery-3.6.0.js"></script>
+<script src="jquery-ui/jquery-ui.js"></script>
+<script>
+    $( function() {
+      $( "#accordion" ).accordion();
+    } );
+
+    $( function() {
+    $( "#progressbar" ).progressbar({
+      value: false
+    });
+  } );
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+    </script>
+    
+</html>
